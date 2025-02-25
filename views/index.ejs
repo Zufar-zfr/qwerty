@@ -1,0 +1,61 @@
+<%- include('partials/header') %>
+
+<div class="hero">
+    <h1>Кабинет врача-терапевта</h1>
+    <p>Профессиональная медицинская помощь</p>
+</div>
+
+<div class="container">
+    <section class="doctor-info">
+        <h2>О враче</h2>
+        <div class="doctor-card">
+            <div class="doctor-details">
+                <h3>Иван Иванович Иванов</h3>
+                <p class="specialization">Врач-терапевт высшей категории</p>
+                <p class="experience">Опыт работы: 15 лет</p>
+                <p class="description">
+                    Квалифицированный специалист с большим опытом работы. 
+                    Специализируется на диагностике и лечении различных заболеваний.
+                    Регулярно проходит курсы повышения квалификации и участвует в медицинских конференциях.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment-form-container">
+        <h2>Записаться на прием</h2>
+        <form id="appointmentForm" class="appointment-form">
+            <div class="form-group">
+                <label for="patientName">Ваше имя:</label>
+                <input type="text" id="patientName" name="patientName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Номер телефона:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Дата приема:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Время приема:</label>
+                <select id="time" name="time" required>
+                    <option value="">Выберите время</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" name="comment" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Записаться на прием</button>
+        </form>
+    </section>
+</div>
+
+<script src="/js/appointment.js"></script>
+<%- include('partials/footer') %> 

@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+<div class="dashboard-container">
+    <h2>Панель управления</h2>
+    
+    <div class="date-selector">
+        <label for="dateSelect">Выберите дату:</label>
+        <input type="date" id="dateSelect">
+    </div>
+
+    <div class="appointments-table-container">
+        <table class="appointments-table">
+            <thead>
+                <tr>
+                    <th>Время</th>
+                    <th>Имя пациента</th>
+                    <th>Телефон</th>
+                    <th>Комментарий</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody id="appointmentsTableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="/js/dashboard.js"></script>
+<%- include('partials/footer') %> 
